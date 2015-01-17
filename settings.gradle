@@ -1,0 +1,5 @@
+rootProject.name = 'getmycoffee'
+
+include 'providers'
+include 'api'
+include 'android'
