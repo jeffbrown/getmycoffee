@@ -1,6 +1,7 @@
 .gradle
 build/
-**/build/
-**/gradle/
-**/gradlew*
-**/gradle.properties
+.gradle/
+gradle.properties
+.idea
+android/android.iml
+getmycoffee.iml
