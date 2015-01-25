@@ -1,7 +1,10 @@
-.gradle
 build/
 .gradle/
 gradle.properties
 .idea
-android/android.iml
-getmycoffee.iml
+*.iml
+api/gradle/
+api/gradlew*
+android/gradle/
+android/gradlew*
+/.nb-gradle/private/
