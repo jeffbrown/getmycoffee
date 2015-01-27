@@ -8,7 +8,7 @@ class StoreController extends BaseController {
     def index() {
         Store store = new Store(name: 'starbucks', address: 'somewhere in time 22')
 
-        renderson store,'default'
+        renderson store
     }
 
 }

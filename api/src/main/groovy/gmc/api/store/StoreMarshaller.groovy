@@ -1,12 +1,12 @@
 package gmc.api.store
 
-import gmc.api.marshaller.NamedMarshaller
+import gmc.api.marshaller.JSONMarshaller
 import org.springframework.stereotype.Component
 
 @Component
-class StoreDefaultMarshaller extends NamedMarshaller<Store> {
+class StoreMarshaller extends JSONMarshaller<Store> {
 
-    StoreDefaultMarshaller() {
+    StoreMarshaller() {
         super(Store)
     }
 

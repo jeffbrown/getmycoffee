@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired
 import javax.annotation.PostConstruct
 
 @Component
-class NamedMarshallerLoader {
+class JSONMarshallerLoader {
 
     @Autowired
-    List<NamedMarshaller> marshallerList
+    List<JSONMarshaller> marshallerList
 
     @PostConstruct
     void initializeMarshallerList() {
