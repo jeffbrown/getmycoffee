@@ -79,6 +79,12 @@ grails:
                 staticparts: none
 
 ---
+grails:
+  mongo:
+      host: localhost
+      port: 27017
+      databaseName: test
+
 dataSource:
     pooled: true
     jmxExport: true
