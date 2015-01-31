@@ -1,13 +1,15 @@
 package gmc.api.store
 
+import grails.compiler.GrailsCompileStatic
 import gmc.api.controller.BaseController
 
+@GrailsCompileStatic
 class StoreController extends BaseController {
 
     StoreBusinessService storeBusinessService
 
     def index() {
-        render storeBusinessService.list(pagination) as grails.converters.JSON
+        renderson storeBusinessService.list(pagination)
     }
 
 }
