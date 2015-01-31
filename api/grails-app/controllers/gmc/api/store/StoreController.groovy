@@ -1,14 +1,13 @@
 package gmc.api.store
 
-import grails.converters.JSON
 import gmc.api.controller.BaseController
 
 class StoreController extends BaseController {
 
-    def index() {
-        Store store = new Store(name: 'starbucks', address: 'somewhere in time 22')
+    StoreBusinessService storeBusinessService
 
-        renderson store
+    def index() {
+        render storeBusinessService.list(pagination) as grails.converters.JSON
     }
 
 }
