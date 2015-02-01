@@ -56,13 +56,6 @@ grails:
         default:
             pretty:
                 print: true
-            circular:
-                reference:
-                    behaviour: INSERT_NULL
-        json:
-            circular:
-                reference:
-                    behaviour: INSERT_NULL
     hibernate:
         cache:
             queries: false
