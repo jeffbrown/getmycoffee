@@ -9,9 +9,13 @@ class Store {
     String name
     String brand
 
+    List location
+
     static mapping = {
         database 'test'
         collection 'stores'
+
+        location geoIndex: '2d'
     }
 
 }
