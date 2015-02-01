@@ -10,16 +10,17 @@ class BaseController {
 
     static final Integer DEFAULT_LIMIT = 10
     static final Integer DEFAULT_OFFSET = 0
+    static final Map<?,?> FORMATS_PARAMETER = [formats:['json','xml']]
 
     Pagination getPagination() {
         return new Pagination(
-            max: params.max ?: DEFAULT_LIMIT,
-            offset: params.offset ?: DEFAULT_OFFSET
+            max: "${params.max ?: DEFAULT_LIMIT}"?.toInteger(),
+            offset: "${params.offset?: DEFAULT_OFFSET}"?.toInteger()
         )
     }
 
     def renderson(Object o) {
-        render o as JSON
+        respond o, FORMATS_PARAMETER
     }
 
 }
