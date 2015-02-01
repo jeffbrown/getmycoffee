@@ -11,14 +11,15 @@ class StoreUnitSpec extends BaseUnitSpec {
         Store store =
             new Store(
                 name: storeName,
-                address: storeAddress
+                brand: brandName
             )
         and: 'saving the instance'
         store.save()
         then: 'we should get what we expected'
         store.hasErrors() == !saved
         where: 'possible parameters are'
-        storeName|storeAddress|saved
-        'grailscoffeestore'|'groovy road 2'|true
+        storeName          |brandName    |saved
+        'grailscoffeestore'|'groovycoffe'|true
     }
+
 }

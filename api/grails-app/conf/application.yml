@@ -56,13 +56,6 @@ grails:
         default:
             pretty:
                 print: true
-            circular:
-                reference:
-                    behaviour: INSERT_NULL
-        json:
-            circular:
-                reference:
-                    behaviour: INSERT_NULL
     hibernate:
         cache:
             queries: false
@@ -79,6 +72,12 @@ grails:
                 staticparts: none
 
 ---
+grails:
+  mongo:
+      host: localhost
+      port: 27017
+      databaseName: test
+
 dataSource:
     pooled: true
     jmxExport: true
