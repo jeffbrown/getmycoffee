@@ -1,7 +1,9 @@
 package gmc.api.marshaller
 
 import grails.converters.JSON
+import groovy.transform.CompileStatic
 
+@CompileStatic
 abstract class JSONMarshaller<T> {
 
     Class<?> marshallerClazz

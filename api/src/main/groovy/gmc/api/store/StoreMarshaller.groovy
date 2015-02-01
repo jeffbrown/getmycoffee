@@ -1,9 +1,12 @@
 package gmc.api.store
 
 import gmc.api.marshaller.JSONMarshaller
+
+import groovy.transform.CompileStatic
 import org.springframework.stereotype.Component
 
 @Component
+@CompileStatic
 class StoreMarshaller extends JSONMarshaller<Store> {
 
     StoreMarshaller() {
