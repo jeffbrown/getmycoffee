@@ -1,0 +1,14 @@
+== Intro
+
+This project is a proof of concept to evaluate how
+http://groovy-lang.org/[`Groovy`] can create a full-stack application
+using http://grails.org[`Grails`] framework for the back-end, in the
+front-end with an http://android.com[`Android`] app and Gradle as the
+building tool to build them all.
+
+I'll be writing about all the different parts of the application,
+which libraries I've used, techniques I put in practice, problems I
+had in the way...etc.
+
+I hope this will be helping not only me but others using the same
+technology.
