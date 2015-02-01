@@ -17,7 +17,8 @@ class StoreMarshaller extends JSONMarshaller<Store> {
         return [
             id: store.id.toString(),
             brand: store.brand,
-            name: store.name
+            name: store.name,
+            location: store.location
         ]
     }
 
