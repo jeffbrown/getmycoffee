@@ -1,0 +1,10 @@
+= GET-MY-COFFEE
+Mario García
+:numbered:
+:imagesDir: images/
+
+image::get-my-coffe.png[align=center]
+
+include::intro.adoc[]
+
+include::versions.adoc[]

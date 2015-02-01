@@ -1,0 +1,18 @@
+== Versions
+
+This chapter will have versions of the main technologies I've used, if
+you're looking for a specific library version, go to the chapter
+dedicated to the technology using that library (Groovy, Grails,
+Android).
+
+=== Groovy
+
+(TODO)
+
+=== Grails
+
+(TODO)
+
+=== Android
+
+(TODO)
