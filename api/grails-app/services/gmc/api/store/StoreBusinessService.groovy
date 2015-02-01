@@ -1,11 +1,13 @@
 package gmc.api.store
 
-import groovy.transform.CompileStatic
+import grails.compiler.GrailsCompileStatic
 
 import gmc.api.util.Pagination
 import gmc.api.util.PagedResult
 
-@CompileStatic
+import org.bson.types.ObjectId
+
+@GrailsCompileStatic
 class StoreBusinessService {
 
     PagedResult<Store> list(Pagination pagination) {
@@ -13,6 +15,10 @@ class StoreBusinessService {
             resultList: Store.list(pagination.properties),
             totalCount: Store.count()
         )
+    }
+
+    Store show(String id) {
+        return Store.get(new ObjectId(id))
     }
 
 }

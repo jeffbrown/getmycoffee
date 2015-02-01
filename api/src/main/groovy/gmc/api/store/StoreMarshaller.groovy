@@ -15,7 +15,7 @@ class StoreMarshaller extends JSONMarshaller<Store> {
 
     Map<?,?> render(Store store) {
         return [
-            id: store.id,
+            id: store.id.toString(),
             brand: store.brand,
             name: store.name
         ]

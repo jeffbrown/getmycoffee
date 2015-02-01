@@ -1,8 +1,10 @@
 package gmc.api.store
 
+import org.bson.types.ObjectId
+
 class Store {
 
-    String id
+    ObjectId id
 
     String name
     String brand
