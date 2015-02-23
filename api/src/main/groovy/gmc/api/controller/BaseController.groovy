@@ -5,7 +5,6 @@ import groovy.transform.CompileStatic
 
 import gmc.api.util.Pagination
 
-@CompileStatic
 class BaseController {
 
     static final Integer DEFAULT_LIMIT = 10

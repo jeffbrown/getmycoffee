@@ -11,6 +11,11 @@ import org.bson.types.ObjectId
 class StoreBusinessService {
 
     PagedResult<Store> list(Pagination pagination) {
+        if(!Store.count()) {
+            5.times {
+                new Store(name: "Name $it", brand: "Brand $it").save()
+            }
+        }
         return new PagedResult<Store>(
             resultList: Store.list(pagination.properties),
             totalCount: Store.count()

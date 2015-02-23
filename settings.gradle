@@ -1,4 +1,3 @@
 rootProject.name = 'getmycoffee'
 
 include 'api'
-include 'android'
